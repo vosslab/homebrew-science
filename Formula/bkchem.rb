@@ -2,14 +2,14 @@
 #                https://rubydoc.brew.sh/Formula
 # PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
 class Bkchem < Formula
-  desc "a free chemical drawing program"
+  desc "BKChem is a chemical drawing program written in Python"
   homepage "https://bkchem.zirael.org/"
   homepage "https://github.com/vosslab/bkchem"
   homepage "https://github.com/macports/macports-ports/blob/master/science/bkchem/Portfile/"
-  #url "https://bkchem.zirael.org/download/bkchem-0.13.0.tar.gz"
-  #sha256 "ac78f9bb6fa5c62ec7a2281c9ef4a6a9b5180b51cb4e9353963ce772c1869238"
-  license "GNU Free Documentation License 1.3"
-  version "0.15.0rc1"
+  url "https://github.com/vosslab/bkchem/archive/refs/tags/0.15.0pre1.tar.gz"
+  sha256 "eab07d90f0fc5bb193fd0b921fafee80eff6bea0933178d8d4928fe71ff79388"
+  license "LGPL-2.1"
+  version "0.15.0pre1"
 
   # depends_on
   depends_on "python@3.10"
