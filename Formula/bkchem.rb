@@ -4,18 +4,22 @@
 class Bkchem < Formula
   desc "a free chemical drawing program"
   homepage "https://bkchem.zirael.org/"
-  url "https://bkchem.zirael.org/download/bkchem-0.13.0.tar.gz"
-  sha256 "ac78f9bb6fa5c62ec7a2281c9ef4a6a9b5180b51cb4e9353963ce772c1869238"
+  homepage "https://github.com/vosslab/bkchem"
+  homepage "https://github.com/macports/macports-ports/blob/master/science/bkchem/Portfile/"
+  #url "https://bkchem.zirael.org/download/bkchem-0.13.0.tar.gz"
+  #sha256 "ac78f9bb6fa5c62ec7a2281c9ef4a6a9b5180b51cb4e9353963ce772c1869238"
   license "GNU Free Documentation License 1.3"
+  version "0.15.0rc1"
 
-  # depends_on "cmake" => :build
+  # depends_on
+  depends_on "python@3.10"
+  depends_on "python-tk"
+  depends_on "py3cairo"
 
   def install
-    # ENV.deparallelize  # if your formula fails when building in parallel
-    # Remove unrecognized options if warned by configure
-    # https://rubydoc.brew.sh/Formula.html#std_configure_args-instance_method
-    system "./configure", *std_configure_args, "--disable-silent-rules"
-    # system "cmake", "-S", ".", "-B", "build", *std_cmake_args
+    cd "source/bkchem" do
+     system Formula["python@3.x"].opt_bin/"python3", *Language::Python.setup_install_args(prefix)
+    end
   end
 
   test do
