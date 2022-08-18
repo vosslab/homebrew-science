@@ -8,20 +8,19 @@ This tap is not maintained. We are not accepting new pull requests, except to mi
 
 Anyone can host their own tap. See [Interesting Taps & Forks](https://docs.brew.sh/Interesting-Taps-and-Forks.html) and [How to Create and Maintain a Tap](https://docs.brew.sh/How-to-Create-and-Maintain-a-Tap.html)
 
-![Brewsci logo](https://raw.githubusercontent.com/brewsci/homebrew-science/master/.github/brewsci-256x256.png)
 [![For science.](https://i.imgur.com/Bswp1.png)](https://xkcd.com/585)
 
 ## How do I install these formulae?
 
 ```sh
-brew tap brewsci/science
+brew tap vosslab/science
 brew install FORMULA
 ```
 
 or
 
 ```sh
-brew install brewsci/science/FORMULA
+brew install vosslab/science/FORMULA
 ```
 
 ## Troubleshooting
