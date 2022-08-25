@@ -1,4 +1,4 @@
-cask Cpdf do
+cask "cpdf" do
   arch arm: "ARM", intel: "Intel"
   version "2.5.1"
 
