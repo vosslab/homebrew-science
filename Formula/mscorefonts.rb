@@ -2,8 +2,7 @@ class MSCoreFonts < Formula
   desc "Microsoft Core fonts for the Web"
   homepage "https://sourceforge.net/projects/mscorefonts2/"
   license "Microsoft font license"
-  version 2
-  head "https://github.com/obihann/archey-osx.git", branch: "master"
+  version '2.0'
 
   depends_on "font-andale-mono"
   depends_on "font-arial"
