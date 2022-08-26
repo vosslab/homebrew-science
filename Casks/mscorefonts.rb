@@ -16,13 +16,6 @@ class MSCoreFonts < Formula
   depends_on "font-trebuchet-ms"  
   depends_on "font-verdana"
 
-  def install
-    system "true"
-  end
-
-
-  test do
-    system "false"
-  end
+  stage_only true
 
 end
